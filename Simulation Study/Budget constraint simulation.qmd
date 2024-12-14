@@ -411,24 +411,6 @@ When the cost of an additional sample $c_2$ is relatively close to the cost of t
 
 We examined how the cost ratios and the underlying parameters ($\alpha$, $\beta$, $\gamma^2$, $\sigma^2$) in the linear hierarchical model influence the optimal strategy under a budget constraint. $\alpha$ is the intercept and, therefore, has no effect on $\beta$ estimation. $\beta$ is the treatment effect, meaning higher values for $\beta$ make it much easier to detect the treatment effect due to higher signal-to-noise ratios. Thus, for higher true $\beta$ values, the variance of $\hat{\beta}$ is lower. In this model, $\sigma^2$ represents the intra-cluster variance, while $\gamma^2$ represents the inter-cluster variance. Figure 2 illustrates that as $\gamma$ increases, $Var(\hat{\beta})$ also increases across all scenarios.
 
-```{r vary beta}
-# set.seed(1234)
-# norm_case1_beta <- tune_beta(500, case_1[case_1$num_clusters == 33,])
-# norm_case2_beta <- tune_beta(500, case_2[case_2$num_clusters == 37,])
-# norm_case3_beta <- tune_beta(500, case_3[case_3$num_clusters == 21,])
-
-# Save RDS file
-# saveRDS(norm_case1_beta, "norm_case1_beta.rds")
-# saveRDS(norm_case2_beta, "norm_case2_beta.rds")
-# saveRDS(norm_case3_beta, "norm_case3_beta.rds")
-
-norm_case1_beta <- readRDS("norm_case1_beta.rds")
-norm_case2_beta <- readRDS("norm_case2_beta.rds")
-norm_case3_beta <- readRDS("norm_case3_beta.rds")
-
-norm_beta <- rbind(norm_case1_beta, norm_case2_beta,norm_case3_beta)
-```
-
 ```{r vary gamma sigma}
 # set.seed(1234)
 # beta_vec <- c(1.5)
@@ -504,9 +486,9 @@ set.seed(1234)
 # beta_vec2 <- c(1)
 # gamma_vec2 <- c(0.1, 0.5, 1)
 # strategy <- data.frame(num_clusters = c(33, 37, 21), obs_per_cluster = c(2, 5, 2))
-# poisson_res2 <- tune_all(max.iter = 500, strategy = strategy, beta_vec = beta_vec2, gamma_vec = gamma_vec2, alpha_vec = alpha_vec)
-# poisson_res2 <- sep_column(poisson_res2)
-# saveRDS(poisson_res2, "poisson_res2.rds")
+# poisson_res1 <- tune_all(max.iter = 500, strategy = strategy, beta_vec = beta_vec2, gamma_vec = gamma_vec2, alpha_vec = alpha_vec)
+# poisson_res1 <- sep_column(poisson_res1)
+# saveRDS(poisson_res1, "poisson_res1.rds")
 ```
 
 ```{r poisson_gamma, fig.cap="Impact of Gamma on Variance of Beta"}
