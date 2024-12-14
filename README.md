@@ -9,7 +9,10 @@ This repository showcases three distinct data analysis projects, showcasing my s
 
 **Methods**: This report explores the relationship between environmental conditions and marathon performance. The goal is to investigate (1) the effects of increasing age on marathon performance in men and women, (2) the impact of environmental conditions on marathon performance, and whether the impact differs across age and gender, and (3) which weather parameters (WBGT, Flag conditions, temperature, etc) that have the largest impact on marathon performance. The data used in this analysis was collected from the 5 major marathons (Boston, Chicago, NYC, Twin Cities, and Grandma's) from years 1993 and 2016 for a total of 11564 race records. The full report can be found [here](Exploratory Data Analysis/Report files/marathon EDA analysis.pdf). 
 
-**Results**: The analysis reveals the influence of environmental conditions, particularly black globe temperature, dry bulb temperature, wet bulb temperature, and dew point, on marathon performance. The relationship between WBGT and performance follows a U-shaped curve. Women experience a more accelerated decline in marathon performance as they age compared to men, especially in the 55-64 and 65+ age groups. The analysis also shows older age groups are more sensitive to heat and humidity, and therefore the impact of environmental conditions on marathon performance differs across age groups. Full report can be found [here](<Exploratory Data Analysis/Report files/marathon EDA analysis.pdf>).
+![EDA figure 1](https://github.com/user-attachments/assets/9b349dd0-734d-40e7-8890-b80eee0bafa4)
+
+**Results**
+: The analysis reveals the influence of environmental conditions, particularly black globe temperature, dry bulb temperature, wet bulb temperature, and dew point, on marathon performance. The relationship between WBGT and performance follows a U-shaped curve. Women experience a more accelerated decline in marathon performance as they age compared to men, especially in the 55-64 and 65+ age groups. The analysis also shows older age groups are more sensitive to heat and humidity, and therefore the impact of environmental conditions on marathon performance differs across age groups. Full report can be found [here](<Exploratory Data Analysis/Report files/marathon EDA analysis.pdf>).
 
 ## Project 2
 ### Moderation Analysis and Prediction of Smoking Abstinence in Behavioral Therapy and Pharmacotherapy
@@ -26,6 +29,7 @@ This repository showcases three distinct data analysis projects, showcasing my s
 **Background**: This project explores the impact of study design parameters on the precision of treatment effect estimates $\hat{\beta}$ in cluster-randomized trials under a fixed budget constraint. We aim to determine the optimal study design that lowers the variance of the treatment effect estimates. 
 
 **Model Framework**:
+
 For $Y_{ij} \sim$ normal distribution:
 
 - Cluster-level mean: $\mu_i \mid X_i, \epsilon_i = \alpha + \beta X_i + \epsilon_i, \text{where} \epsilon \sim N(0, \gamma^2)$ We generate the cluster-level mean from a normal distribution with mean $\mu_{i0} = \alpha + \beta X_i$ and variance $\gamma^2$.
