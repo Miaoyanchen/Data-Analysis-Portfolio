@@ -22,7 +22,7 @@ For $Y_{ij} \sim$ Poisson distribution:
 ### Results
 The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint.
 
-## Files
+## Files and Functions
 
 -   `Project 3 - Simulation.qmd` - R quarto file that contains the code for visualization, and simulation results
 -   `vary all parameters normal.R` - R script file that records function to test the impact of varying all parameters on the variance of the treatment effect estimates for $Y_{ij} \sim$ normal distribution
