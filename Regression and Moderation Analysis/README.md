@@ -1,50 +1,43 @@
 ------------------------------------------------------------------------
-# Determine the optimal study design under a fixed budget
 
-## Aim
-This project explores the impact of study design parameters on the precision of treatment effect estimates (\(\hat{\beta}\)) in cluster-randomized trials under a fixed budget constraint. We aim to determine the optimal study design that lowers the variance of the treatment effect estimates.
+# Predicting smoking abstinence and moderation analysis for behavioral therapy and pharmacotherapy
 
+### Background & aim
 
-## Model Framework
-For $Y_{ij} \sim$ normal distribution:
+Previous randomized, placebo-controlled 2x2 factorial design in smokers with major depressive disorder (MDD) comparing behavioral activation for smoking cessation (BASC) versus standard behavioral treatment (ST) and varenicline versus placebo has discovered varenicline improved smoking abstinence. This is a follow-up analysis for the study to examine baseline variables as potential moderators of the effects of behaviorial treatment on abstinence and evaluate baseline variable as predictors of abstinence, controlling for behavioral treatment and pharmacotherapy.
 
-- Cluster-level mean: $\mu_i \mid X_i, \epsilon_i = \alpha + \beta X_i + \epsilon_i, \text{where} \epsilon \sim N(0, \gamma^2)$ We generate the cluster-level mean from a normal distribution with mean $\mu_{i0} = \alpha + \beta X_i$ and variance $\gamma^2$.
-
-- Subject-level outcome: $Y_{ij} \mid \mu_i, e_{ij} = \mu_i + e_{ij}, \quad e_{ij} \sim N(0, \sigma^2)$ We generate the - subject-level outcome from a normal distribution with mean $\mu_i$ and variance $\sigma^2$.
-
-For $Y_{ij} \sim$ Poisson distribution:
-
-- Group-level mean: $\log(u_i) \sim N(\alpha + \beta X_i, \gamma^2)$ We generate the cluster-level mean from a normal distribution with mean $\mu_{i0} = \alpha + \beta X_i$ and variance $\gamma^2$, and exponentiate it to get the mean counts $\mu_i$
-
-- Subject-level outcome: $Y_{ij} \mid \mu_i \sim Poisson(\mu_i)$ for each subject in the cluster We generate the subject-level outcome from a Poisson distribution with mean $\mu_i$.
-
+### Methods
+Multiple imputation is used to address missing data. We employed LASSO regression and best subset regression to perform moderation analysis to investigate the factors influencing smoke cessation and efficacy of the treatment.  Models are evaluated and compared for their performance metrics and coefficients. 
 
 ### Results
-The optimal study design is determined by minimizing the variance of the treatment effect estimates (\(\text{Var}(\hat{\beta})\)). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint.
+Predictors of smoking cessation and treatment moderators were identified; however, there is some uncertainty regarding the significance of the coefficients. Larger and more diverse samples are needed to validate these findings and enhance their reliability.
 
 ## Files
 
 ### Report files
 
--   `Project 3 - Simulation.qmd` - R quarto file that contains the code for visualization, and simulation results
--   `vary all parameters normal.R` - R script file that records function to test the impact of varying all parameters on the variance of the treatment effect estimates for $Y_{ij} \sim$ normal distribution
--   `vary all parameters poisson.R` - R script file that records function to test the impact of varying all parameters on the variance of the treatment effect estimates for $Y_{ij} \sim$ Poisson distribution
--   `fit model.R` - R script file that records function to fit the model for the normal distribution outcome
--   `data generation.R` - R script file that records function to generate data for the normal distribution outcome
--   `poisson simulation.R` - R script file that records function to simulate data, and fit model for the Poisson distribution outcome
+-   `regression and moderation analysis.qmd` - R quarto file that contains the code for analysis, such as exploratory data analysis, model fitting, and model evaluation  
+-   `references.bib` - Bibliography citation for references in the report
+-   `Multiple imputation.R` - R script file that includes train-test split and multiple imputation for missing data
+-   `regression and moderation analysis.pdf` - PDF version of the moderation and regression analysis report; code appendix is also available at the end of the report
 
+## Dependencies
 
-## Libraries
-lme4 - for fitting the mixed effects model
+The following packages are required to run the code in the R quarto file:
 
-purrr - rbinom generating random numbers
+-   Data manipulation: `dplyr`, `tidyverse`
 
-ggplot2 - visualization
+-   Visualization: `ggplot2`
 
-latex2exp - for latex expressions
+-   Cross-validation: `caret`
 
-tidyverse - data manipulation
+-   Model evaluation: `pROC`
 
-ggpubr - visualization
+-   Nice table - `kableExtra`
+
+-   Exploratory data analysis - `gtsummary`, `psych`
+
+-   Model fitting - `glmnet` (Lasso regression), `L0Learn` (Best Subset regression)
+
 
 
