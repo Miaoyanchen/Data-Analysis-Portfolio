@@ -21,6 +21,8 @@ This repository showcases three distinct data analysis projects, showcasing my s
 
 **Methods**: We used LASSO regression and Best Subset regression with $L_0+L_2$ regularization to perform moderation analysis to investigate the factors influencing smoke cessation and efficacy of the treatment. Multiple imputation was used to address missing data. In addition, models were evaluated using area under the receiver operating characteristic curve (AUC), Brier score, calibration plot, accuracy, sensitivity, and specificity.
 
+![AUC figure](https://github.com/user-attachments/assets/8de08c8a-e531-45c8-a60f-64ce915d5797)
+
 **Results**: Predictors of smoking cessation and treatment moderators were identified; Morning smoking habits and nicotne metabolism were two pronouced moderators identified for varenicline. Baseline characteristics such as non-hispanic white, income, and FTCD score are selected as significant predictors of smoking abstinence. However, there are some uncertainty regarding the significance of the coefficients. Larger and more diverse samples are needed to validate these findings and enhance their reliability. Full report can be found [here](<Regression and Moderation Analysis/Report files/Regression and moderation analysis.pdf>).
 
 ## Project 3
