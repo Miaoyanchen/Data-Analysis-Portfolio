@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------
 
-# Predicting smoking abstinence and moderation analysis for behavioral therapy and pharmacotherapy
+# Moderation Analysis and Prediction of Smoking Abstinence in Behavioral Therapy and Pharmacotherapy
 
 ### Background & aim
 
