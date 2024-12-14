@@ -9,7 +9,7 @@ This repository showcases three distinct data analysis projects, showcasing my s
 
 **Methods**: This report explores the relationship between environmental conditions and marathon performance. The goal is to investigate (1) the effects of increasing age on marathon performance in men and women, (2) the impact of environmental conditions on marathon performance, and whether the impact differs across age and gender, and (3) which weather parameters (WBGT, Flag conditions, temperature, etc) that have the largest impact on marathon performance. The data used in this analysis was collected from the 5 major marathons (Boston, Chicago, NYC, Twin Cities, and Grandma's) from years 1993 and 2016 for a total of 11564 race records. The full report can be found [here](Exploratory Data Analysis/Report files/marathon EDA analysis.pdf). 
 
-![](Images/EDA figure 1.png)
+![](https://github.com/Miaoyanchen/Data-Analysis-Portfolio/Images/EDA figure 1.png)
 
 **Results**: The analysis reveals the influence of environmental conditions, particularly black globe temperature, dry bulb temperature, wet bulb temperature, and dew point, on marathon performance. The relationship between WBGT and performance follows a U-shaped curve. Women experience a more accelerated decline in marathon performance as they age compared to men, especially in the 55-64 and 65+ age groups. The analysis also shows older age groups are more sensitive to heat and humidity, and therefore the impact of environmental conditions on marathon performance differs across age groups. Full report can be found [here](<Exploratory Data Analysis/Report files/marathon EDA analysis.pdf>).
 
