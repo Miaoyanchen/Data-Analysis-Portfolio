@@ -38,7 +38,7 @@ For $Y_{ij} \sim$ Poisson distribution:
 
 - Subject-level outcome: $Y_{ij} \mid \mu_i \sim Poisson(\mu_i)$ for each subject in the cluster We generate the subject-level outcome from a Poisson distribution with mean $\mu_i$.
 
-**Results**: The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint. More details can be found in the [report](Simulation/report/simulation_report.pdf)
+**Results**: The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint. More details can be found in the [report](Simulation Study/Budget constraint simulation.pdf)
 
 ## Contact
 **Miaoyan Chen** \
