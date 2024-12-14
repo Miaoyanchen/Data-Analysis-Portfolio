@@ -9,7 +9,7 @@ This repository showcases three distinct data analysis projects, showcasing my s
 
 **Methods**: This report explores the relationship between environmental conditions and marathon performance. The goal is to investigate (1) the effects of increasing age on marathon performance in men and women, (2) the impact of environmental conditions on marathon performance, and whether the impact differs across age and gender, and (3) which weather parameters (WBGT, Flag conditions, temperature, etc) that have the largest impact on marathon performance. The data used in this analysis was collected from the 5 major marathons (Boston, Chicago, NYC, Twin Cities, and Grandma's) from years 1993 and 2016 for a total of 11564 race records. The full report can be found [here](Exploratory Data Analysis/Report files/marathon EDA analysis.pdf). 
 
-**Results**: The analysis reveals the influence of environmental conditions, particularly black globe temperature, dry bulb temperature, wet bulb temperature, and dew point, on marathon performance. The relationship between WBGT and performance follows a U-shaped curve. Women experience a more accelerated decline in marathon performance as they age compared to men, especially in the 55-64 and 65+ age groups. The analysis also shows older age groups are more sensitive to heat and humidity, and therefore the impact of environmental conditions on marathon performance differs across age groups. Full report can be found [here](https://github.com/Miaoyanchen/Exploratory Data Analysis/Report files).
+**Results**: The analysis reveals the influence of environmental conditions, particularly black globe temperature, dry bulb temperature, wet bulb temperature, and dew point, on marathon performance. The relationship between WBGT and performance follows a U-shaped curve. Women experience a more accelerated decline in marathon performance as they age compared to men, especially in the 55-64 and 65+ age groups. The analysis also shows older age groups are more sensitive to heat and humidity, and therefore the impact of environmental conditions on marathon performance differs across age groups. Full report can be found [here](<Miaoyanchen/Exploratory Data Analysis/Report files>).
 
 ## Project 2
 ### Moderation Analysis and Prediction of Smoking Abstinence in Behavioral Therapy and Pharmacotherapy
@@ -18,7 +18,7 @@ This repository showcases three distinct data analysis projects, showcasing my s
 
 **Methods**: We used LASSO regression and Best Subset regression with $L_0+L_2$ regularization to perform moderation analysis to investigate the factors influencing smoke cessation and efficacy of the treatment. Multiple imputation was used to address missing data. In addition, models were evaluated using area under the receiver operating characteristic curve (AUC), Brier score, calibration plot, accuracy, sensitivity, and specificity.
 
-**Results**: Predictors of smoking cessation and treatment moderators were identified; Morning smoking habits and nicotne metabolism were two pronouced moderators identified for varenicline. Baseline characteristics such as non-hispanic white, income, and FTCD score are selected as significant predictors of smoking abstinence. However, there are some uncertainty regarding the significance of the coefficients. Larger and more diverse samples are needed to validate these findings and enhance their reliability. Full report can be found [here](https://github.com/Miaoyanchen/Regression and Moderation Analysis/Report file/Regression and moderation analysis.pdf).
+**Results**: Predictors of smoking cessation and treatment moderators were identified; Morning smoking habits and nicotne metabolism were two pronouced moderators identified for varenicline. Baseline characteristics such as non-hispanic white, income, and FTCD score are selected as significant predictors of smoking abstinence. However, there are some uncertainty regarding the significance of the coefficients. Larger and more diverse samples are needed to validate these findings and enhance their reliability. Full report can be found [here](<Regression and Moderation Analysis/Report file/Regression and moderation analysis.pdf>).
 
 ## Project 3
 ### Determine the optimal study design under a fixed budget using simulation
@@ -38,7 +38,7 @@ For $Y_{ij} \sim$ Poisson distribution:
 
 - Subject-level outcome: $Y_{ij} \mid \mu_i \sim Poisson(\mu_i)$ for each subject in the cluster We generate the subject-level outcome from a Poisson distribution with mean $\mu_i$.
 
-**Results**: The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint. More details can be found in the [report](https://github.com/Miaoyanchen/Simulation Study/Budget constraint simulation.pdf)
+**Results**: The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint. More details can be found in the [report]<Simulation Study/Budget constraint simulation.pdf>)
 
 ## Contact Information
 **Miaoyan Chen** \
