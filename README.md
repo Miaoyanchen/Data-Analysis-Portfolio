@@ -18,7 +18,7 @@ This repository showcases three distinct data analysis projects, showcasing my s
 
 **Methods**: We used LASSO regression and Best Subset regression with $L_0+L_2$ regularization to perform moderation analysis to investigate the factors influencing smoke cessation and efficacy of the treatment. Multiple imputation was used to address missing data. In addition, models were evaluated using area under the receiver operating characteristic curve (AUC), Brier score, calibration plot, accuracy, sensitivity, and specificity.
 
-**Results**: Predictors of smoking cessation and treatment moderators were identified; Morning smoking habits and nicotne metabolism were two pronouced moderators identified for varenicline. Baseline characteristics such as non-hispanic white, income, and FTCD score are selected as significant predictors of smoking abstinence. However, there are some uncertainty regarding the significance of the coefficients. Larger and more diverse samples are needed to validate these findings and enhance their reliability. Full report can be found [here](<Regression and Moderation Analysis/Report file/Regression and moderation analysis.pdf>).
+**Results**: Predictors of smoking cessation and treatment moderators were identified; Morning smoking habits and nicotne metabolism were two pronouced moderators identified for varenicline. Baseline characteristics such as non-hispanic white, income, and FTCD score are selected as significant predictors of smoking abstinence. However, there are some uncertainty regarding the significance of the coefficients. Larger and more diverse samples are needed to validate these findings and enhance their reliability. Full report can be found [here](<Regression and Moderation Analysis/Report files/Regression and moderation analysis.pdf>).
 
 ## Project 3
 ### Determine the optimal study design under a fixed budget using simulation
@@ -38,7 +38,7 @@ For $Y_{ij} \sim$ Poisson distribution:
 
 - Subject-level outcome: $Y_{ij} \mid \mu_i \sim Poisson(\mu_i)$ for each subject in the cluster We generate the subject-level outcome from a Poisson distribution with mean $\mu_i$.
 
-**Results**: The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint. More details can be found in the [report]<Simulation Study/Budget constraint simulation.pdf>)
+**Results**: The optimal study design is determined by minimizing the variance of the treatment effect estimates Var($\hat{\beta}$). The optimal study design is largely influenced by the between cluster correlation, and the budget constraint. More details can be found in the [report](<Simulation Study/Budget constraint simulation.pdf>)
 
 ## Contact Information
 **Miaoyan Chen** \
